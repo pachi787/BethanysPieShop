@@ -23,7 +23,7 @@ namespace BethanysPieShop.Tests
             // Arrange
             var pie = new Pie { Name = "Sample pie", Price = 12.95M };
             // Act
-            pie.Name  = "Another pie";
+            pie.Name = "Another pie";
             //Assert
             Assert.Equal("Another pie", pie.Name);
         }
