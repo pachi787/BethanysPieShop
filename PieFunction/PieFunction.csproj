@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Models\AppDbContext.cs" />
+    <Compile Remove="Models\CategoryRepository.cs" />
+    <Compile Remove="Models\DbInitializer.cs" />
+    <Compile Remove="Models\ICategoryRepository.cs" />
+    <Compile Remove="Models\IOrderRepository.cs" />
+    <Compile Remove="Models\IPieReviewRepository.cs" />
+    <Compile Remove="Models\MockCategoryRepository.cs" />
+    <Compile Remove="Models\MockPieRepository.cs" />
+    <Compile Remove="Models\OrderRepository.cs" />
+    <Compile Remove="Models\PieRepository.cs" />
+    <Compile Remove="Models\PieReviewRepository.cs" />
+    <Compile Remove="Models\ShoppingCart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
