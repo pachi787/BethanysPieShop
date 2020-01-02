@@ -25,7 +25,7 @@ namespace BethanysPieShop.Tests
             // Act
             pie.Name = "Another pie";
             //Assert
-            Assert.Equal("Another pie", pie.Name);
+            Assert.Equal("Another pie1", pie.Name);
         }
     }
 }
