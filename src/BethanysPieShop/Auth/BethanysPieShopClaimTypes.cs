@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace BethanysPieShop.Auth
 {
@@ -15,6 +16,8 @@ namespace BethanysPieShop.Auth
             }
             catch (Exception ex)
             {
+
+                Debug.WriteLine(ex.Message);
             }
         }
     }
