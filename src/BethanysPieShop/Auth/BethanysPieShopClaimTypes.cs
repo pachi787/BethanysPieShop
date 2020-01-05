@@ -16,7 +16,6 @@ namespace BethanysPieShop.Auth
             }
             catch (Exception ex)
             {
-
                 Debug.WriteLine(ex.Message);
             }
         }
