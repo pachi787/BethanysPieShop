@@ -17,6 +17,7 @@ namespace BethanysPieShop.Auth
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                //Empty catch create a build error
             }
         }
     }
