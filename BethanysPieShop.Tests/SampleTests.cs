@@ -14,6 +14,7 @@ namespace BethanysPieShop.Tests
             // Act
             pie.Price = 20M;
             //Assert
+
             Assert.Equal(20M, pie.Price);
         }
 

@@ -28,10 +28,13 @@ namespace BethanysPieShop
 
         public Startup(IHostingEnvironment hostingEnvironment)
         {
-            _configurationRoot = new ConfigurationBuilder()
-                           .SetBasePath(hostingEnvironment.ContentRootPath)
-                           .AddJsonFile("appsettings.json")
-                           .Build();
+            if (hostingEnvironment != null)
+            {
+                _configurationRoot = new ConfigurationBuilder()
+                               .SetBasePath(hostingEnvironment.ContentRootPath)
+                               .AddJsonFile("appsettings.json")
+                               .Build();
+            }
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
