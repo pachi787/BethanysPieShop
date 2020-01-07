@@ -167,9 +167,7 @@ namespace BethanysPieShop
             }
             else
             {
-                // app.UseExceptionHandler("/AppException");
-                app.UseDeveloperExceptionPage();
-                app.UseStatusCodePages();
+                app.UseExceptionHandler("/AppException");
             }
 
             //gzip compression
@@ -191,13 +189,13 @@ namespace BethanysPieShop
             //        {"HomeController", LogLevel.Debug}
             //    }).AddDebug();
 
-            //Serilog
-            //Log.Logger = new LoggerConfiguration()
-            //    .MinimumLevel.Debug()
-            //    .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "BethanysLogs-{Date}.txt"))
-            //    .CreateLogger();
+           // Serilog
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "BethanysLogs-{Date}.txt"))
+                .CreateLogger();
 
-            //loggerFactory.AddSerilog();
+            loggerFactory.AddSerilog();
 
             //app.UseMvcWithDefaultRoute();
 
