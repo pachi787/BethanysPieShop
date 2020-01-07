@@ -167,7 +167,9 @@ namespace BethanysPieShop
             }
             else
             {
-                app.UseExceptionHandler("/AppException");
+                // app.UseExceptionHandler("/AppException");
+                app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
             }
 
             //gzip compression
