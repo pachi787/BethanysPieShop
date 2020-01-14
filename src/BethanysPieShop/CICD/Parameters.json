@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "c27d217a-951f-488c-8376-df8e98181216"
+        },
+        "name": {
+            "value": "BethanyShop123"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "ASP-AzureDevOpsResourceGroup-bc7a"
+        },
+        "serverFarmResourceGroup": {
+            "value": "AzureDevOpsResourceGroup"
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "skuCode": {
+            "value": "S1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "currentStack": {
+            "value": "dotnetcore"
+        },
+        "errorLink": {
+            "value": "https://BethanyShop123.scm.azurewebsites.net/detectors"
+        }
+    }
+}
