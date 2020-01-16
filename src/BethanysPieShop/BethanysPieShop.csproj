@@ -25,6 +25,7 @@
     <Compile Remove="Models\PieFunctionRepo.cs" />
   </ItemGroup>
 
+  
   <ItemGroup>
     <None Update="wwwroot\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
