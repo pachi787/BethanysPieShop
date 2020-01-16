@@ -25,10 +25,6 @@
     <Compile Remove="Models\PieFunctionRepo.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="CICD\az-PowerShellScript\script.ps1" />
-    <None Remove="CICD\AzureRM-PowerShellScript\script.ps1" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="CICD\az-PowerShellScript\script.ps1" />
