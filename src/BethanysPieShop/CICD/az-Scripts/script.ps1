@@ -3,5 +3,5 @@ param ($TemplateFilePath,$TemplateParameterFilePath)
 
 
 
- New-AzResourceGroupDeployment -ResourceGroupName AzureDevOpsResourceGroup  -nameFromTemplate BethanyShop123 `
+ New-AzResourceGroupDeployment -ResourceGroupName AzureDevOpsResourceGroup  `
 -TemplateFile $TemplateFilePath  -TemplateParameterFile  $TemplateParameterFilePath
