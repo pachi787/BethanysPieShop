@@ -1,0 +1,129 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "administratorLogin": {
+      "value": "goda-admin"
+    },
+    "administratorLoginPassword": {
+      "value": "Pachi$#111"
+    },
+    "collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "databaseName": {
+      "value": "BethanysPieShop"
+    },
+    "tier": {
+      "value": "GeneralPurpose"
+    },
+    "skuName": {
+      "value": "GP_Gen5_2"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "maxSizeBytes": {
+      "value": 34359738368
+    },
+    "sampleName": {
+      "value": ""
+    },
+    "serverName": {
+      "value": "prashant-goda"
+    },
+    "licenseType": {
+      "value": "LicenseIncluded"
+    },
+    "readScaleOut": {
+      "value": "Disabled"
+    },
+    "zoneRedundant": {
+      "value": false
+    },
+    "numberOfReplicas": {
+      "value": 0
+    },
+    "enableADS": {
+      "value": true
+    },
+    "allowAzureIps": {
+      "value": true
+    },
+    "allowClientIp": {
+      "value": false
+    },
+    "clientIpValue": {
+      "value": "203.170.48.2"
+    },
+    "databaseTags": {
+      "value": {}
+    },
+    "serverTags": {
+      "value": {}
+    },
+    "enableVA": {
+      "value": true
+    },
+    "enablePrivateEndpoint": {
+      "value": false
+    },
+    "privateEndpointNestedTemplateId": {
+      "value": "pe-795d8b70-b011-4d14-8c2c-7c233a614004"
+    },
+    "privateEndpointSubscriptionId": {
+      "value": ""
+    },
+    "privateEndpointResourceGroup": {
+      "value": ""
+    },
+    "privateEndpointName": {
+      "value": ""
+    },
+    "privateEndpointLocation": {
+      "value": ""
+    },
+    "privateEndpointSubnetId": {
+      "value": ""
+    },
+    "privateLinkServiceName": {
+      "value": ""
+    },
+    "privateLinkServiceServiceId": {
+      "value": ""
+    },
+    "privateEndpointVnetSubscriptionId": {
+      "value": ""
+    },
+    "privateEndpointVnetResourceGroup": {
+      "value": ""
+    },
+    "privateEndpointVnetName": {
+      "value": ""
+    },
+    "privateEndpointSubnetName": {
+      "value": ""
+    },
+    "enablePrivateDnsZone": {
+      "value": true
+    },
+    "privateEndpointDnsRecordUniqueId": {
+      "value": "795d8b70-b011-4d14-8c2c-7c233a614007"
+    },
+    "privateEndpointTemplateLink": {
+      "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200114.33-/DeploymentTemplates/PrivateEndpoint.json"
+    },
+    "privateDnsForPrivateEndpointTemplateLink": {
+      "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200114.33-/DeploymentTemplates/PrivateDnsForPrivateEndpoint.json"
+    },
+    "privateDnsForPrivateEndpointNicTemplateLink": {
+      "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200114.33-/DeploymentTemplates/PrivateDnsForPrivateEndpointNic.json"
+    },
+    "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+      "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.0.20200114.33-/DeploymentTemplates/PrivateDnsForPrivateEndpointIpConfig.json"
+    },
+    "clientIpRuleName": {
+      "value": "ClientIp-2020-1-24_15-49-49"
+    }
+  }
+}

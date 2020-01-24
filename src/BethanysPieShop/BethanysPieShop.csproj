@@ -26,14 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="CICD\az-Scripts\script.ps1" />
     <None Remove="CICD\azureRM-Scripts\script.ps1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="CICD\az-Scripts\script.ps1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="CICD\azureRM-Scripts\script.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
