@@ -26,16 +26,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="CICD\az-Scripts\SqlServerDeploymentScript.ps1" />
-    <None Remove="CICD\az-Scripts\WebAppDeploymentScript.ps1" />
+    <None Remove="CICD\az-Scripts\SqlServerResourceScript.ps1" />
+    <None Remove="CICD\az-Scripts\WebAppResourceScript.ps1" />
     <None Remove="CICD\azureRM-Scripts\script.ps1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="CICD\az-Scripts\SqlServerDeploymentScript.ps1">
+    <Content Include="CICD\az-Scripts\SqlServerResourceScript.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="CICD\az-Scripts\WebAppDeploymentScript.ps1">
+    <Content Include="CICD\az-Scripts\WebAppResourceScript.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="CICD\azureRM-Scripts\script.ps1">
