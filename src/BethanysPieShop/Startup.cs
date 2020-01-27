@@ -157,11 +157,12 @@ namespace BethanysPieShop
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory ,AppDbContext appDbContext)
         {
             //Diagnostics
 
             //app.UseWelcomePage();
+            appDbContext.Database.Migrate();
 
             if (env.IsDevelopment())
             {
