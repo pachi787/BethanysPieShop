@@ -6,7 +6,12 @@
       "value": "goda-admin"
     },
     "administratorLoginPassword": {
-      "value": "Pachi$#111"
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/c27d217a-951f-488c-8376-df8e98181216/resourceGroups/AzureDevOpsResourceGroup/providers/Microsoft.KeyVault/vaults/BethanyKeyVault"
+        },
+        "secretName": "BethanysPieShopSqlAdminPassword"
+      }
     },
     "collation": {
       "value": "SQL_Latin1_General_CP1_CI_AS"
