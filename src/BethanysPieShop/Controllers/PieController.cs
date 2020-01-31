@@ -8,6 +8,8 @@ using BethanysPieShop.Models;
 using BethanysPieShop.Utility;
 using BethanysPieShop.ViewModels;
 using Microsoft.Extensions.Logging;
+using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.DataContracts;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -65,6 +67,11 @@ namespace BethanysPieShop.Controllers
             if (pie == null)
             {
                 _logger.LogDebug(LogEventIds.GetPieIdNotFound, new Exception("Pie not found"), "Pie with id {0} not found", id);
+
+                //Application Insights
+                TelemetryClient tc = new TelemetryClient();
+                tc.TrackException(new ExceptionTelemetry(new Exception($"Pie with id {id} not found")));
+                //tc.TrackEvent("HomeControllerLoad");
                 //return NotFound();
                 //Catch this error using the exception filter
                 throw new PieNotFoundException();

@@ -151,6 +151,8 @@ namespace BethanysPieShop
             services.AddMemoryCache();
             services.AddSession();
 
+            services.AddApplicationInsightsTelemetry();
+
             //Filters
             services.AddScoped<TimerAction>();
 
