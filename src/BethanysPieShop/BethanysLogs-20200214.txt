@@ -1,0 +1,1129 @@
+2020-02-14 11:27:50.762 +05:30 [Debug] Compiling query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-14 11:27:50.894 +05:30 [Debug] Optimized query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-14 11:27:51.848 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Categories] AS [c])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-14 11:27:51.868 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:52.113 +05:30 [Information] Executed DbCommand (232ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-14 11:27:52.144 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:52.144 +05:30 [Debug] Compiling query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-14 11:27:52.144 +05:30 [Debug] Optimized query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-14 11:27:52.160 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Pies] AS [p])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-14 11:27:52.160 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:52.388 +05:30 [Information] Executed DbCommand (221ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Pies] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-14 11:27:52.388 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:52.489 +05:30 [Information] User profile is available. Using '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-14 11:27:52.602 +05:30 [Debug] Hosting starting
+2020-02-14 11:27:52.692 +05:30 [Debug] Hosting started
+2020-02-14 11:27:52.791 +05:30 [Debug] Connection id ""0HLTH2BA71ORK"" started.
+2020-02-14 11:27:52.933 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/  
+2020-02-14 11:27:53.049 +05:30 [Debug] The request path "/" does not match a supported file type
+2020-02-14 11:27:53.118 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-2a4f8962-05bf-42f5-8f9f-224821de58d9.xml"'.
+2020-02-14 11:27:53.250 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-3c6c929f-56df-41ca-83f1-0a017e4e761e.xml"'.
+2020-02-14 11:27:53.250 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-424d71b8-1045-427a-835d-e4783f92130b.xml"'.
+2020-02-14 11:27:53.272 +05:30 [Debug] Found key {2a4f8962-05bf-42f5-8f9f-224821de58d9}.
+2020-02-14 11:27:53.335 +05:30 [Debug] Found key {3c6c929f-56df-41ca-83f1-0a017e4e761e}.
+2020-02-14 11:27:53.335 +05:30 [Debug] Found key {424d71b8-1045-427a-835d-e4783f92130b}.
+2020-02-14 11:27:53.350 +05:30 [Debug] Considering key {3c6c929f-56df-41ca-83f1-0a017e4e761e} with expiration date 2020-02-25 09:58:43Z as default key.
+2020-02-14 11:27:53.372 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+2020-02-14 11:27:53.419 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2020-02-14 11:27:53.435 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2020-02-14 11:27:53.450 +05:30 [Debug] Using key {3c6c929f-56df-41ca-83f1-0a017e4e761e} as the default key.
+2020-02-14 11:27:53.767 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:27:53.920 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)"
+2020-02-14 11:27:54.036 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-14 11:27:54.036 +05:30 [Debug] Loading home page
+2020-02-14 11:27:54.157 +05:30 [Debug] Compiling query model: 
+'from Pie p in 
+    (from Pie c in DbSet<Pie>
+    select c)
+    .Include([c].Category)
+where p.IsPieOfTheWeek
+select p'
+2020-02-14 11:27:54.175 +05:30 [Debug] Optimized query model: 
+'from Pie c in DbSet<Pie>
+where c.IsPieOfTheWeek
+select c'
+2020-02-14 11:27:54.208 +05:30 [Debug] Including navigation: 'c.Category'
+2020-02-14 11:27:54.276 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Pie> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<Pie> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+            FROM [Pies] AS [c]
+            INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+            WHERE [c].[IsPieOfTheWeek] = 1
+        , 
+        shaper: BufferedEntityShaper<Pie>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.Pie,System.Object]), 
+    navigationPath: INavigation[] { Pie.Category, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 12, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Category()
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: CategoryId
+                )
+                var3.<CategoryName>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: CategoryName
+                )
+                var3.<Description>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: Description
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-14 11:27:54.292 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:54.508 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+WHERE [c].[IsPieOfTheWeek] = 1
+2020-02-14 11:27:54.693 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:54.708 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-14 11:27:54.840 +05:30 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2020-02-14 11:27:54.878 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-14 11:27:55.357 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' completed in 472.6817ms.
+2020-02-14 11:27:55.357 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-14 11:27:56.729 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' completed in 1378.5856ms.
+2020-02-14 11:27:56.745 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-14 11:27:56.761 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 8.4621ms.
+2020-02-14 11:27:56.761 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-14 11:27:56.798 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 36.5944ms.
+2020-02-14 11:27:56.798 +05:30 [Debug] The view '"Index"' was found.
+2020-02-14 11:27:56.798 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2020-02-14 11:27:56.899 +05:30 [Debug] View lookup cache miss for view '"Carousel"' in controller '"Home"'.
+2020-02-14 11:27:56.899 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-14 11:27:56.983 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 87.053ms.
+2020-02-14 11:27:56.983 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-14 11:27:57.077 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 85.4675ms.
+2020-02-14 11:27:57.115 +05:30 [Debug] View lookup cache miss for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:27:57.130 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-14 11:27:57.177 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 44.515ms.
+2020-02-14 11:27:57.177 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-14 11:27:57.231 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 66.5538ms.
+2020-02-14 11:27:57.331 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:27:57.331 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:27:57.347 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2020-02-14 11:27:57.347 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-14 11:27:57.431 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 88.339ms.
+2020-02-14 11:27:57.431 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-14 11:27:57.648 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 208.1704ms.
+2020-02-14 11:27:57.920 +05:30 [Debug] Executing view component "BethanysPieShop.Components.CategoryMenu" with arguments ([]).
+2020-02-14 11:27:57.950 +05:30 [Debug] Executed view component "BethanysPieShop.Components.CategoryMenu" in 13.0162ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:27:57.958 +05:30 [Debug] View lookup cache miss for view '"Components/CategoryMenu/Default"' in controller '"Home"'.
+2020-02-14 11:27:57.958 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-14 11:27:57.970 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 10.0305ms.
+2020-02-14 11:27:57.970 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-14 11:27:58.019 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 51.1604ms.
+2020-02-14 11:27:58.035 +05:30 [Debug] Compiling query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-14 11:27:58.035 +05:30 [Debug] Optimized query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-14 11:27:58.035 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Category> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+        FROM [Categories] AS [c]
+    , 
+    shaper: UnbufferedEntityShaper<Category>
+)
+
+2020-02-14 11:27:58.050 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:58.251 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2020-02-14 11:27:58.282 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:58.320 +05:30 [Warning] Accessing expired session, Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb"
+2020-02-14 11:27:58.336 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-14 11:27:58.336 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c)
+.Include([c].Pie)'
+2020-02-14 11:27:58.351 +05:30 [Debug] Optimized query model: 
+'from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c'
+2020-02-14 11:27:58.367 +05:30 [Debug] Including navigation: 'c.Pie'
+2020-02-14 11:27:58.389 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<ShoppingCartItem> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<ShoppingCartItem> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+            FROM [ShoppingCartItems] AS [c]
+            LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+            WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+        , 
+        shaper: BufferedEntityShaper<ShoppingCartItem>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.ShoppingCartItem,System.Object]), 
+    navigationPath: INavigation[] { ShoppingCartItem.Pie, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 4, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Pie()
+                var3.<PieId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: PieId
+                )
+                var3.<AllergyInformation>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: AllergyInformation
+                )
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: CategoryId
+                )
+                var3.<ImageThumbnailUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 3, 
+                    property: ImageThumbnailUrl
+                )
+                var3.<ImageUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 4, 
+                    property: ImageUrl
+                )
+                var3.<InStock>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 5, 
+                    property: InStock
+                )
+                var3.<IsPieOfTheWeek>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 6, 
+                    property: IsPieOfTheWeek
+                )
+                var3.<LongDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 7, 
+                    property: LongDescription
+                )
+                var3.<Name>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 8, 
+                    property: Name
+                )
+                var3.<Price>k__BackingField = decimal TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 9, 
+                    property: Price
+                )
+                var3.<ShortDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 10, 
+                    property: ShortDescription
+                )
+                var3.<SugarLevel>k__BackingField = SugarLevel TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 11, 
+                    property: SugarLevel
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-14 11:27:58.389 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:58.668 +05:30 [Information] Executed DbCommand (266ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-14 11:27:58.668 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:58.690 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c.Pie.Price * (decimal) c.Amount)
+.Sum()'
+2020-02-14 11:27:58.721 +05:30 [Debug] Optimized query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+join Pie c.Pie in DbSet<Pie>
+on Property(c, "PieId") equals (Nullable<int>) Property(c.Pie, "PieId") into c.Pie_group
+from Pie c.Pie in 
+    (from Pie c.Pie_groupItem in c.Pie_group
+    select c.Pie_groupItem)
+    .DefaultIfEmpty()
+where c.ShoppingCartId == __ShoppingCartId_0
+select (decimal) (?[c.Pie].Price?) * (Nullable<decimal>) (decimal) c.Amount)
+.Sum()'
+2020-02-14 11:27:58.837 +05:30 [Warning] The LINQ expression 'Sum()' could not be translated and will be evaluated locally. To configure this warning use the DbContextOptionsBuilder.ConfigureWarnings API (event id 'RelationalEventId.QueryClientEvaluationWarning'). ConfigureWarnings can be used when overriding the DbContext.OnConfiguring method or using AddDbContext on the application service provider.
+2020-02-14 11:27:58.890 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<decimal> _ToSequence(
+    element: decimal Sum(
+        source: IEnumerable<decimal> _Select(
+            source: IEnumerable<TransparentIdentifier<ShoppingCartItem, Pie>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+                    FROM [ShoppingCartItems] AS [c]
+                    LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+                    WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+                    ORDER BY [c].[PieId]
+                , 
+                shaper: CompositeShaper`3
+            )
+            , 
+            selector: (TransparentIdentifier<ShoppingCartItem, Pie> t1) => (decimal) (?t1.Inner.Price?) * (Nullable<decimal>) (decimal) t1.Outer.Amount
+        )
+    )
+)
+
+2020-02-14 11:27:58.906 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:59.122 +05:30 [Information] Executed DbCommand (217ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:27:59.122 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:27:59.138 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 800.4189ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:27:59.138 +05:30 [Debug] View lookup cache miss for view '"Components/ShoppingCartSummary/Default"' in controller '"Home"'.
+2020-02-14 11:27:59.138 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-14 11:27:59.138 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 12.0605ms.
+2020-02-14 11:27:59.138 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-14 11:27:59.185 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 36.7437ms.
+2020-02-14 11:27:59.191 +05:30 [Debug] View lookup cache miss for view '"LoginPartial"' in controller '"Home"'.
+2020-02-14 11:27:59.191 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-14 11:27:59.207 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 11.3847ms.
+2020-02-14 11:27:59.207 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-14 11:27:59.254 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 45.5405ms.
+2020-02-14 11:27:59.285 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-14 11:28:00.109 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 836.3672ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:28:00.109 +05:30 [Debug] View lookup cache miss for view '"Components/SystemStatusPage/Default"' in controller '"Home"'.
+2020-02-14 11:28:00.109 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-14 11:28:00.125 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 7.5603ms.
+2020-02-14 11:28:00.125 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-14 11:28:00.140 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 20.2413ms.
+2020-02-14 11:28:00.156 +05:30 [Debug] View lookup cache miss for view '"LanguageSelection"' in controller '"Home"'.
+2020-02-14 11:28:00.156 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-14 11:28:00.156 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 6.6483ms.
+2020-02-14 11:28:00.156 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-14 11:28:00.225 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 61.9698ms.
+2020-02-14 11:28:00.372 +05:30 [Information] Executed action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" in 6454.1171ms
+2020-02-14 11:28:00.372 +05:30 [Information] Session started; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"9b7a5de6-a3b7-7a77-0277-916966e609bc"
+2020-02-14 11:28:00.394 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"9b7a5de6-a3b7-7a77-0277-916966e609bc", Count:1
+2020-02-14 11:28:00.425 +05:30 [Debug] Connection id ""0HLTH2BA71ORK"" completed keep alive response.
+2020-02-14 11:28:00.441 +05:30 [Information] Request finished in 7533.582ms 200 text/html; charset=utf-8
+2020-02-14 11:28:20.475 +05:30 [Debug] Compiling query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-14 11:28:20.694 +05:30 [Debug] Optimized query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-14 11:28:21.543 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Categories] AS [c])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-14 11:28:21.580 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:21.828 +05:30 [Information] Executed DbCommand (223ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-14 11:28:21.844 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:21.859 +05:30 [Debug] Compiling query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-14 11:28:21.859 +05:30 [Debug] Optimized query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-14 11:28:21.881 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Pies] AS [p])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-14 11:28:21.881 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:22.097 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Pies] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-14 11:28:22.097 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:22.197 +05:30 [Information] User profile is available. Using '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-14 11:28:22.329 +05:30 [Debug] Hosting starting
+2020-02-14 11:28:22.460 +05:30 [Debug] Hosting started
+2020-02-14 11:28:22.561 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" started.
+2020-02-14 11:28:22.561 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" started.
+2020-02-14 11:28:22.746 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:44381/  0
+2020-02-14 11:28:22.746 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/ShoppingCart/AddToShoppingCart?pieId=1  
+2020-02-14 11:28:22.915 +05:30 [Debug] The request path "/ShoppingCart/AddToShoppingCart" does not match a supported file type
+2020-02-14 11:28:22.946 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:28:22.962 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-2a4f8962-05bf-42f5-8f9f-224821de58d9.xml"'.
+2020-02-14 11:28:22.977 +05:30 [Information] Request finished in 246.698ms 200 
+2020-02-14 11:28:23.196 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-3c6c929f-56df-41ca-83f1-0a017e4e761e.xml"'.
+2020-02-14 11:28:23.196 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-424d71b8-1045-427a-835d-e4783f92130b.xml"'.
+2020-02-14 11:28:23.237 +05:30 [Debug] Found key {2a4f8962-05bf-42f5-8f9f-224821de58d9}.
+2020-02-14 11:28:23.342 +05:30 [Debug] Found key {3c6c929f-56df-41ca-83f1-0a017e4e761e}.
+2020-02-14 11:28:23.342 +05:30 [Debug] Found key {424d71b8-1045-427a-835d-e4783f92130b}.
+2020-02-14 11:28:23.358 +05:30 [Debug] Considering key {3c6c929f-56df-41ca-83f1-0a017e4e761e} with expiration date 2020-02-25 09:58:43Z as default key.
+2020-02-14 11:28:23.396 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+2020-02-14 11:28:23.427 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2020-02-14 11:28:23.427 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2020-02-14 11:28:23.443 +05:30 [Debug] Using key {3c6c929f-56df-41ca-83f1-0a017e4e761e} as the default key.
+2020-02-14 11:28:23.895 +05:30 [Debug] Route value '"ShoppingCart"' with key '"area"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint"'.
+2020-02-14 11:28:23.895 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:28:24.079 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)"
+2020-02-14 11:28:24.148 +05:30 [Warning] Accessing expired session, Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb"
+2020-02-14 11:28:24.403 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)" with arguments (["1"]) - ModelState is Valid
+2020-02-14 11:28:24.487 +05:30 [Debug] Compiling query model: 
+'(from Pie c in DbSet<Pie>
+select c)
+.Include([c].Category)'
+2020-02-14 11:28:24.487 +05:30 [Debug] Optimized query model: 
+'from Pie c in DbSet<Pie>
+select c'
+2020-02-14 11:28:24.522 +05:30 [Debug] Including navigation: 'c.Category'
+2020-02-14 11:28:24.630 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Pie> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<Pie> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+            FROM [Pies] AS [c]
+            INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+        , 
+        shaper: BufferedEntityShaper<Pie>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.Pie,System.Object]), 
+    navigationPath: INavigation[] { Pie.Category, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 12, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Category()
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: CategoryId
+                )
+                var3.<CategoryName>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: CategoryName
+                )
+                var3.<Description>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: Description
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-14 11:28:24.652 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:24.871 +05:30 [Information] Executed DbCommand (215ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+2020-02-14 11:28:25.072 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:25.103 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem s in DbSet<ShoppingCartItem>
+where s.Pie.PieId == __pie_PieId_0 && s.ShoppingCartId == __ShoppingCartId_1
+select s)
+.SingleOrDefault()'
+2020-02-14 11:28:25.144 +05:30 [Debug] Optimized query model: 
+'(from ShoppingCartItem s in DbSet<ShoppingCartItem>
+join Pie s.Pie in DbSet<Pie>
+on Property(s, "PieId") equals (Nullable<int>) Property(s.Pie, "PieId") into s.Pie_group
+from Pie s.Pie in 
+    (from Pie s.Pie_groupItem in s.Pie_group
+    select s.Pie_groupItem)
+    .DefaultIfEmpty()
+where (?[s.Pie].PieId?) == (Nullable<int>) __pie_PieId_0 && s.ShoppingCartId == __ShoppingCartId_1
+select s)
+.SingleOrDefault()'
+2020-02-14 11:28:25.303 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<ShoppingCartItem> _ToSequence(
+    element: ShoppingCartItem SingleOrDefault(
+        source: IEnumerable<ShoppingCartItem> _Select(
+            source: IEnumerable<TransparentIdentifier<ShoppingCartItem, Pie>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT TOP(2) [s].[ShoppingCartItemId], [s].[Amount], [s].[PieId], [s].[ShoppingCartId], [s.Pie].[PieId], [s.Pie].[AllergyInformation], [s.Pie].[CategoryId], [s.Pie].[ImageThumbnailUrl], [s.Pie].[ImageUrl], [s.Pie].[InStock], [s.Pie].[IsPieOfTheWeek], [s.Pie].[LongDescription], [s.Pie].[Name], [s.Pie].[Price], [s.Pie].[ShortDescription], [s.Pie].[SugarLevel]
+                    FROM [ShoppingCartItems] AS [s]
+                    LEFT JOIN [Pies] AS [s.Pie] ON [s].[PieId] = [s.Pie].[PieId]
+                    WHERE ([s.Pie].[PieId] = @__pie_PieId_0) AND ([s].[ShoppingCartId] = @__ShoppingCartId_1)
+                    ORDER BY [s].[PieId]
+                , 
+                shaper: CompositeShaper`3
+            )
+            , 
+            selector: (TransparentIdentifier<ShoppingCartItem, Pie> t1) => t1.Outer
+        )
+    )
+)
+
+2020-02-14 11:28:25.303 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:25.604 +05:30 [Information] Executed DbCommand (270ms) [Parameters=[@__pie_PieId_0='?', @__ShoppingCartId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [s].[ShoppingCartItemId], [s].[Amount], [s].[PieId], [s].[ShoppingCartId], [s.Pie].[PieId], [s.Pie].[AllergyInformation], [s.Pie].[CategoryId], [s.Pie].[ImageThumbnailUrl], [s.Pie].[ImageUrl], [s.Pie].[InStock], [s.Pie].[IsPieOfTheWeek], [s.Pie].[LongDescription], [s.Pie].[Name], [s.Pie].[Price], [s.Pie].[ShortDescription], [s.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [s]
+LEFT JOIN [Pies] AS [s.Pie] ON [s].[PieId] = [s.Pie].[PieId]
+WHERE ([s.Pie].[PieId] = @__pie_PieId_0) AND ([s].[ShoppingCartId] = @__ShoppingCartId_1)
+ORDER BY [s].[PieId]
+2020-02-14 11:28:25.604 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:25.689 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:25.720 +05:30 [Debug] Beginning transaction with isolation level 'Unspecified'.
+2020-02-14 11:28:26.268 +05:30 [Information] Executed DbCommand (216ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ShoppingCartItems] ([Amount], [PieId], [ShoppingCartId])
+VALUES (@p0, @p1, @p2);
+SELECT [ShoppingCartItemId]
+FROM [ShoppingCartItems]
+WHERE @@ROWCOUNT = 1 AND [ShoppingCartItemId] = scope_identity();
+2020-02-14 11:28:26.291 +05:30 [Debug] Committing transaction.
+2020-02-14 11:28:26.522 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:26.538 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult".
+2020-02-14 11:28:26.607 +05:30 [Information] Executing RedirectResult, redirecting to "/ShoppingCart".
+2020-02-14 11:28:26.623 +05:30 [Information] Executed action "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)" in 2538.356ms
+2020-02-14 11:28:26.670 +05:30 [Information] Session started; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f"
+2020-02-14 11:28:26.692 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:28:26.739 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" completed keep alive response.
+2020-02-14 11:28:26.754 +05:30 [Information] Request finished in 4037.0473ms 302 
+2020-02-14 11:28:26.770 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/ShoppingCart  
+2020-02-14 11:28:26.778 +05:30 [Debug] The request path "/ShoppingCart" does not match a supported file type
+2020-02-14 11:28:26.799 +05:30 [Debug] Route value '"ShoppingCart"' with key '"area"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint"'.
+2020-02-14 11:28:26.819 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:28:26.827 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)"
+2020-02-14 11:28:26.837 +05:30 [Debug] Session loaded; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:28:26.839 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-14 11:28:26.867 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c)
+.Include([c].Pie)'
+2020-02-14 11:28:26.869 +05:30 [Debug] Optimized query model: 
+'from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c'
+2020-02-14 11:28:26.879 +05:30 [Debug] Including navigation: 'c.Pie'
+2020-02-14 11:28:26.909 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<ShoppingCartItem> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<ShoppingCartItem> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+            FROM [ShoppingCartItems] AS [c]
+            LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+            WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+        , 
+        shaper: BufferedEntityShaper<ShoppingCartItem>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.ShoppingCartItem,System.Object]), 
+    navigationPath: INavigation[] { ShoppingCartItem.Pie, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 4, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Pie()
+                var3.<PieId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: PieId
+                )
+                var3.<AllergyInformation>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: AllergyInformation
+                )
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: CategoryId
+                )
+                var3.<ImageThumbnailUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 3, 
+                    property: ImageThumbnailUrl
+                )
+                var3.<ImageUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 4, 
+                    property: ImageUrl
+                )
+                var3.<InStock>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 5, 
+                    property: InStock
+                )
+                var3.<IsPieOfTheWeek>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 6, 
+                    property: IsPieOfTheWeek
+                )
+                var3.<LongDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 7, 
+                    property: LongDescription
+                )
+                var3.<Name>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 8, 
+                    property: Name
+                )
+                var3.<Price>k__BackingField = decimal TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 9, 
+                    property: Price
+                )
+                var3.<ShortDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 10, 
+                    property: ShortDescription
+                )
+                var3.<SugarLevel>k__BackingField = SugarLevel TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 11, 
+                    property: SugarLevel
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-14 11:28:26.919 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:27.129 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-14 11:28:27.145 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:27.161 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c.Pie.Price * (decimal) c.Amount)
+.Sum()'
+2020-02-14 11:28:27.176 +05:30 [Debug] Optimized query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+join Pie c.Pie in DbSet<Pie>
+on Property(c, "PieId") equals (Nullable<int>) Property(c.Pie, "PieId") into c.Pie_group
+from Pie c.Pie in 
+    (from Pie c.Pie_groupItem in c.Pie_group
+    select c.Pie_groupItem)
+    .DefaultIfEmpty()
+where c.ShoppingCartId == __ShoppingCartId_0
+select (decimal) (?[c.Pie].Price?) * (Nullable<decimal>) (decimal) c.Amount)
+.Sum()'
+2020-02-14 11:28:27.198 +05:30 [Warning] The LINQ expression 'Sum()' could not be translated and will be evaluated locally. To configure this warning use the DbContextOptionsBuilder.ConfigureWarnings API (event id 'RelationalEventId.QueryClientEvaluationWarning'). ConfigureWarnings can be used when overriding the DbContext.OnConfiguring method or using AddDbContext on the application service provider.
+2020-02-14 11:28:27.230 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<decimal> _ToSequence(
+    element: decimal Sum(
+        source: IEnumerable<decimal> _Select(
+            source: IEnumerable<TransparentIdentifier<ShoppingCartItem, Pie>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+                    FROM [ShoppingCartItems] AS [c]
+                    LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+                    WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+                    ORDER BY [c].[PieId]
+                , 
+                shaper: CompositeShaper`3
+            )
+            , 
+            selector: (TransparentIdentifier<ShoppingCartItem, Pie> t1) => (decimal) (?t1.Inner.Price?) * (Nullable<decimal>) (decimal) t1.Outer.Amount
+        )
+    )
+)
+
+2020-02-14 11:28:27.230 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:27.446 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:28:27.461 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:28:27.461 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-14 11:28:27.662 +05:30 [Debug] View lookup cache miss for view '"Index"' in controller '"ShoppingCart"'.
+2020-02-14 11:28:27.700 +05:30 [Debug] Code generation for the Razor file at '"/Views/ShoppingCart/Index.cshtml"' started.
+2020-02-14 11:28:28.560 +05:30 [Debug] Code generation for the Razor file at '"/Views/ShoppingCart/Index.cshtml"' completed in 859.3742ms.
+2020-02-14 11:28:28.582 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/ShoppingCart/Index.cshtml"' started.
+2020-02-14 11:28:31.082 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/ShoppingCart/Index.cshtml"' completed in 2508.3511ms.
+2020-02-14 11:28:31.113 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-14 11:28:31.129 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 11.9811ms.
+2020-02-14 11:28:31.129 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-14 11:28:31.182 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 53.3452ms.
+2020-02-14 11:28:31.198 +05:30 [Debug] The view '"Index"' was found.
+2020-02-14 11:28:31.198 +05:30 [Information] Executing ViewResult, running view at path "/Views/ShoppingCart/Index.cshtml".
+2020-02-14 11:29:30.961 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:30.971 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-14 11:29:31.130 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 149.1777ms.
+2020-02-14 11:29:31.132 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-14 11:29:31.442 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 318.1926ms.
+2020-02-14 11:29:32.170 +05:30 [Debug] Executing view component "BethanysPieShop.Components.CategoryMenu" with arguments ([]).
+2020-02-14 11:29:32.200 +05:30 [Debug] Executed view component "BethanysPieShop.Components.CategoryMenu" in 12.1686ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:32.210 +05:30 [Debug] View lookup cache miss for view '"Components/CategoryMenu/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:32.220 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-14 11:29:32.248 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 23.2181ms.
+2020-02-14 11:29:32.250 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-14 11:29:32.371 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 120.3781ms.
+2020-02-14 11:29:32.411 +05:30 [Debug] Compiling query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-14 11:29:32.419 +05:30 [Debug] Optimized query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-14 11:29:32.431 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Category> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+        FROM [Categories] AS [c]
+    , 
+    shaper: UnbufferedEntityShaper<Category>
+)
+
+2020-02-14 11:29:32.431 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:32.663 +05:30 [Information] Executed DbCommand (220ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2020-02-14 11:29:32.683 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:32.714 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-14 11:29:32.734 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:33.006 +05:30 [Information] Executed DbCommand (232ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:29:33.016 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:33.024 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 297.0138ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:33.026 +05:30 [Debug] View lookup cache miss for view '"Components/ShoppingCartSummary/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:33.036 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-14 11:29:33.054 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 13.1091ms.
+2020-02-14 11:29:33.056 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-14 11:29:33.215 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 141.6601ms.
+2020-02-14 11:29:33.247 +05:30 [Debug] View lookup cache miss for view '"LoginPartial"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:33.257 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-14 11:29:33.318 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 18.0464ms.
+2020-02-14 11:29:33.328 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-14 11:29:33.499 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 164.7917ms.
+2020-02-14 11:29:33.650 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-14 11:29:34.662 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 1012.1702ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:34.662 +05:30 [Debug] View lookup cache miss for view '"Components/SystemStatusPage/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:34.677 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-14 11:29:34.693 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 21.4695ms.
+2020-02-14 11:29:34.693 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-14 11:29:34.824 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 115.5315ms.
+2020-02-14 11:29:34.834 +05:30 [Debug] View lookup cache miss for view '"LanguageSelection"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:34.842 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-14 11:29:34.864 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 23.4854ms.
+2020-02-14 11:29:34.873 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-14 11:29:35.016 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 140.9201ms.
+2020-02-14 11:29:35.167 +05:30 [Information] Executed action "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)" in 68338.7692ms
+2020-02-14 11:29:35.167 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:35.207 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:29:35.217 +05:30 [Information] Request finished in 68445.5015ms 200 text/html; charset=utf-8
+2020-02-14 11:29:40.347 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" received FIN.
+2020-02-14 11:29:40.362 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/  
+2020-02-14 11:29:40.362 +05:30 [Debug] The request path "/" does not match a supported file type
+2020-02-14 11:29:40.362 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" disconnecting.
+2020-02-14 11:29:40.362 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:29:40.362 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" sending FIN.
+2020-02-14 11:29:40.384 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)"
+2020-02-14 11:29:40.384 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" sent FIN with status "0".
+2020-02-14 11:29:40.400 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRT"" stopped.
+2020-02-14 11:29:40.416 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-14 11:29:40.416 +05:30 [Debug] Loading home page
+2020-02-14 11:29:40.463 +05:30 [Debug] Compiling query model: 
+'from Pie p in 
+    (from Pie c in DbSet<Pie>
+    select c)
+    .Include([c].Category)
+where p.IsPieOfTheWeek
+select p'
+2020-02-14 11:29:40.478 +05:30 [Debug] Optimized query model: 
+'from Pie c in DbSet<Pie>
+where c.IsPieOfTheWeek
+select c'
+2020-02-14 11:29:40.485 +05:30 [Debug] Including navigation: 'c.Category'
+2020-02-14 11:29:40.485 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Pie> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<Pie> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+            FROM [Pies] AS [c]
+            INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+            WHERE [c].[IsPieOfTheWeek] = 1
+        , 
+        shaper: BufferedEntityShaper<Pie>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.Pie,System.Object]), 
+    navigationPath: INavigation[] { Pie.Category, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 12, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Category()
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: CategoryId
+                )
+                var3.<CategoryName>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: CategoryName
+                )
+                var3.<Description>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: Description
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-14 11:29:40.500 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:40.716 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+WHERE [c].[IsPieOfTheWeek] = 1
+2020-02-14 11:29:40.716 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:40.716 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-14 11:29:40.716 +05:30 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2020-02-14 11:29:40.732 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-14 11:29:40.732 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' completed in 7.851ms.
+2020-02-14 11:29:40.732 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-14 11:29:40.785 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' completed in 46.5219ms.
+2020-02-14 11:29:40.785 +05:30 [Debug] The view '"Index"' was found.
+2020-02-14 11:29:40.785 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2020-02-14 11:29:40.817 +05:30 [Debug] View lookup cache miss for view '"Carousel"' in controller '"Home"'.
+2020-02-14 11:29:40.817 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-14 11:29:40.832 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 13.3113ms.
+2020-02-14 11:29:40.832 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-14 11:29:40.920 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 73.79ms.
+2020-02-14 11:29:40.925 +05:30 [Debug] View lookup cache miss for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:29:40.925 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-14 11:29:40.972 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 32.3371ms.
+2020-02-14 11:29:40.972 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-14 11:29:41.032 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 59.9194ms.
+2020-02-14 11:29:41.064 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:29:41.064 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:29:41.064 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2020-02-14 11:29:41.086 +05:30 [Debug] Session loaded; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:41.086 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-14 11:29:41.086 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:41.318 +05:30 [Information] Executed DbCommand (222ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-14 11:29:41.318 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:41.333 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:41.549 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:29:41.549 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:41.549 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 464.8399ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:41.549 +05:30 [Debug] View lookup cache miss for view '"Components/ShoppingCartSummary/Default"' in controller '"Home"'.
+2020-02-14 11:29:41.565 +05:30 [Debug] View lookup cache miss for view '"LoginPartial"' in controller '"Home"'.
+2020-02-14 11:29:41.565 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-14 11:29:41.988 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 424.5747ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:41.988 +05:30 [Debug] View lookup cache miss for view '"Components/SystemStatusPage/Default"' in controller '"Home"'.
+2020-02-14 11:29:41.988 +05:30 [Debug] View lookup cache miss for view '"LanguageSelection"' in controller '"Home"'.
+2020-02-14 11:29:42.004 +05:30 [Information] Executed action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" in 1613.7329ms
+2020-02-14 11:29:42.004 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:42.035 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:29:42.051 +05:30 [Information] Request finished in 1683.4116ms 200 text/html; charset=utf-8
+2020-02-14 11:29:44.241 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/ShoppingCart/AddToShoppingCart?pieId=4  
+2020-02-14 11:29:44.241 +05:30 [Debug] The request path "/ShoppingCart/AddToShoppingCart" does not match a supported file type
+2020-02-14 11:29:44.241 +05:30 [Debug] Route value '"ShoppingCart"' with key '"area"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint"'.
+2020-02-14 11:29:44.241 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:29:44.256 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)"
+2020-02-14 11:29:44.256 +05:30 [Debug] Session loaded; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:44.272 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)" with arguments (["4"]) - ModelState is Valid
+2020-02-14 11:29:44.272 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:44.496 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+2020-02-14 11:29:44.496 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:44.496 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:44.712 +05:30 [Information] Executed DbCommand (215ms) [Parameters=[@__pie_PieId_0='?', @__ShoppingCartId_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [s].[ShoppingCartItemId], [s].[Amount], [s].[PieId], [s].[ShoppingCartId], [s.Pie].[PieId], [s.Pie].[AllergyInformation], [s.Pie].[CategoryId], [s.Pie].[ImageThumbnailUrl], [s.Pie].[ImageUrl], [s.Pie].[InStock], [s.Pie].[IsPieOfTheWeek], [s.Pie].[LongDescription], [s.Pie].[Name], [s.Pie].[Price], [s.Pie].[ShortDescription], [s.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [s]
+LEFT JOIN [Pies] AS [s.Pie] ON [s].[PieId] = [s.Pie].[PieId]
+WHERE ([s.Pie].[PieId] = @__pie_PieId_0) AND ([s].[ShoppingCartId] = @__ShoppingCartId_1)
+ORDER BY [s].[PieId]
+2020-02-14 11:29:44.728 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:44.728 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:44.728 +05:30 [Debug] Beginning transaction with isolation level 'Unspecified'.
+2020-02-14 11:29:45.167 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[@p0='?', @p1='?', @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ShoppingCartItems] ([Amount], [PieId], [ShoppingCartId])
+VALUES (@p0, @p1, @p2);
+SELECT [ShoppingCartItemId]
+FROM [ShoppingCartItems]
+WHERE @@ROWCOUNT = 1 AND [ShoppingCartItemId] = scope_identity();
+2020-02-14 11:29:45.167 +05:30 [Debug] Committing transaction.
+2020-02-14 11:29:45.399 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:45.414 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult".
+2020-02-14 11:29:45.414 +05:30 [Information] Executing RedirectResult, redirecting to "/ShoppingCart".
+2020-02-14 11:29:45.430 +05:30 [Information] Executed action "BethanysPieShop.Controllers.ShoppingCartController.AddToShoppingCart (BethanysPieShop)" in 1163.4976ms
+2020-02-14 11:29:45.430 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:45.445 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:29:45.445 +05:30 [Information] Request finished in 1218.956ms 302 
+2020-02-14 11:29:45.468 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/ShoppingCart  
+2020-02-14 11:29:45.468 +05:30 [Debug] The request path "/ShoppingCart" does not match a supported file type
+2020-02-14 11:29:45.468 +05:30 [Debug] Route value '"ShoppingCart"' with key '"area"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Routing.KnownRouteValueConstraint"'.
+2020-02-14 11:29:45.483 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:29:45.483 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)"
+2020-02-14 11:29:45.483 +05:30 [Debug] Session loaded; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:45.483 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-14 11:29:45.483 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:45.715 +05:30 [Information] Executed DbCommand (222ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-14 11:29:45.731 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:45.746 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:45.969 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:29:45.969 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:45.969 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-14 11:29:45.969 +05:30 [Debug] View lookup cache hit for view '"Index"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:45.969 +05:30 [Debug] The view '"Index"' was found.
+2020-02-14 11:29:45.984 +05:30 [Information] Executing ViewResult, running view at path "/Views/ShoppingCart/Index.cshtml".
+2020-02-14 11:29:58.395 +05:30 [Debug] View lookup cache hit for view '"_Layout"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:58.411 +05:30 [Debug] Executing view component "BethanysPieShop.Components.CategoryMenu" with arguments ([]).
+2020-02-14 11:29:58.411 +05:30 [Debug] Executed view component "BethanysPieShop.Components.CategoryMenu" in 0.1293ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:58.411 +05:30 [Debug] View lookup cache hit for view '"Components/CategoryMenu/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:58.411 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:58.635 +05:30 [Information] Executed DbCommand (213ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2020-02-14 11:29:58.641 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:58.641 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-14 11:29:58.641 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:58.904 +05:30 [Information] Executed DbCommand (215ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:29:58.952 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:29:59.004 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 305.8211ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:59.025 +05:30 [Debug] View lookup cache hit for view '"Components/ShoppingCartSummary/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:59.035 +05:30 [Debug] View lookup cache hit for view '"LoginPartial"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:59.043 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-14 11:29:59.538 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 485.4045ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:29:59.538 +05:30 [Debug] View lookup cache hit for view '"Components/SystemStatusPage/Default"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:59.548 +05:30 [Debug] View lookup cache hit for view '"LanguageSelection"' in controller '"ShoppingCart"'.
+2020-02-14 11:29:59.556 +05:30 [Information] Executed action "BethanysPieShop.Controllers.ShoppingCartController.Index (BethanysPieShop)" in 14065.5607ms
+2020-02-14 11:29:59.558 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:29:59.636 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:29:59.638 +05:30 [Information] Request finished in 14165.5987ms 200 text/html; charset=utf-8
+2020-02-14 11:30:24.485 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/  
+2020-02-14 11:30:24.501 +05:30 [Debug] The request path "/" does not match a supported file type
+2020-02-14 11:30:24.501 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-14 11:30:24.501 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)"
+2020-02-14 11:30:24.516 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-14 11:30:24.516 +05:30 [Debug] Loading home page
+2020-02-14 11:30:24.532 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:24.532 +05:30 [Information] Cache was cleared: reason Expired
+2020-02-14 11:30:24.764 +05:30 [Information] Executed DbCommand (226ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+WHERE [c].[IsPieOfTheWeek] = 1
+2020-02-14 11:30:24.764 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:24.764 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-14 11:30:24.779 +05:30 [Debug] View lookup cache hit for view '"Index"' in controller '"Home"'.
+2020-02-14 11:30:24.779 +05:30 [Debug] The view '"Index"' was found.
+2020-02-14 11:30:24.779 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2020-02-14 11:30:24.786 +05:30 [Debug] View lookup cache hit for view '"Carousel"' in controller '"Home"'.
+2020-02-14 11:30:24.786 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:30:24.786 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:30:24.786 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-14 11:30:24.786 +05:30 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Home"'.
+2020-02-14 11:30:24.786 +05:30 [Debug] Executing view component "BethanysPieShop.Components.CategoryMenu" with arguments ([]).
+2020-02-14 11:30:24.802 +05:30 [Debug] Executed view component "BethanysPieShop.Components.CategoryMenu" in 0.0163ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:30:24.802 +05:30 [Debug] View lookup cache miss for view '"Components/CategoryMenu/Default"' in controller '"Home"'.
+2020-02-14 11:30:24.802 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.018 +05:30 [Information] Executed DbCommand (214ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2020-02-14 11:30:25.018 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.018 +05:30 [Debug] Session loaded; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:30:25.018 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-14 11:30:25.033 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.250 +05:30 [Information] Executed DbCommand (215ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-14 11:30:25.250 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.250 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.466 +05:30 [Information] Executed DbCommand (218ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-14 11:30:25.481 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-14 11:30:25.481 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 450.6705ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:30:25.488 +05:30 [Debug] View lookup cache hit for view '"Components/ShoppingCartSummary/Default"' in controller '"Home"'.
+2020-02-14 11:30:25.488 +05:30 [Debug] View lookup cache hit for view '"LoginPartial"' in controller '"Home"'.
+2020-02-14 11:30:25.488 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-14 11:30:27.063 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 1577.2106ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-14 11:30:27.063 +05:30 [Debug] View lookup cache hit for view '"Components/SystemStatusPage/Default"' in controller '"Home"'.
+2020-02-14 11:30:27.079 +05:30 [Debug] View lookup cache hit for view '"LanguageSelection"' in controller '"Home"'.
+2020-02-14 11:30:27.079 +05:30 [Information] Executed action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" in 2573.6537ms
+2020-02-14 11:30:27.079 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"8e96400d-44b5-c472-aa86-787efac15d0f", Count:1
+2020-02-14 11:30:27.079 +05:30 [Debug] Connection id ""0HLTH2BJ2GIRS"" completed keep alive response.
+2020-02-14 11:30:27.125 +05:30 [Information] Request finished in 2595.0597ms 200 text/html; charset=utf-8

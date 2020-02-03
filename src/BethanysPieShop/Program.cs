@@ -15,7 +15,7 @@ namespace BethanysPieShop
                 .UseApplicationInsights()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-              //  .UseIISIntegration()
+                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 

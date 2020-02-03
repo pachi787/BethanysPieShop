@@ -1,0 +1,498 @@
+2020-02-13 15:50:34.206 +05:30 [Debug] Compiling query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-13 15:50:34.420 +05:30 [Debug] Optimized query model: 
+'(from Category <generated>_1 in DbSet<Category>
+select <generated>_1)
+.Any()'
+2020-02-13 15:50:36.157 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Categories] AS [c])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-13 15:50:36.239 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:36.480 +05:30 [Information] Executed DbCommand (220ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-13 15:50:36.502 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:36.507 +05:30 [Debug] Compiling query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-13 15:50:36.510 +05:30 [Debug] Optimized query model: 
+'(from Pie <generated>_1 in DbSet<Pie>
+select <generated>_1)
+.Any()'
+2020-02-13 15:50:36.519 +05:30 [Debug] TRACKED: False
+(QueryContext queryContext) => IEnumerable<bool> _ToSequence(
+    element: bool GetResult(
+        valueBuffers: IEnumerable<ValueBuffer> _Query(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT CASE
+                    WHEN EXISTS (
+                        SELECT 1
+                        FROM [Pies] AS [p])
+                    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                END
+            , 
+            queryIndex: default(System.Nullable`1[System.Int32])
+        )
+    )
+)
+
+2020-02-13 15:50:36.522 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:36.791 +05:30 [Information] Executed DbCommand (210ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Pies] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-02-13 15:50:36.821 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:36.939 +05:30 [Information] User profile is available. Using '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-02-13 15:50:37.165 +05:30 [Debug] Hosting starting
+2020-02-13 15:50:37.348 +05:30 [Debug] Hosting started
+2020-02-13 15:50:37.369 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" started.
+2020-02-13 15:50:37.370 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" started.
+2020-02-13 15:50:37.677 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:44381/  0
+2020-02-13 15:50:37.677 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/  
+2020-02-13 15:50:37.937 +05:30 [Debug] The request path "/" does not match a supported file type
+2020-02-13 15:50:37.998 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" completed keep alive response.
+2020-02-13 15:50:38.037 +05:30 [Information] Request finished in 398.0359ms 200 
+2020-02-13 15:50:38.038 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-2a4f8962-05bf-42f5-8f9f-224821de58d9.xml"'.
+2020-02-13 15:50:38.257 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-3c6c929f-56df-41ca-83f1-0a017e4e761e.xml"'.
+2020-02-13 15:50:38.281 +05:30 [Debug] Reading data from file '"C:\Users\prashant_goda\AppData\Local\ASP.NET\DataProtection-Keys\key-424d71b8-1045-427a-835d-e4783f92130b.xml"'.
+2020-02-13 15:50:38.354 +05:30 [Debug] Found key {2a4f8962-05bf-42f5-8f9f-224821de58d9}.
+2020-02-13 15:50:38.441 +05:30 [Debug] Found key {3c6c929f-56df-41ca-83f1-0a017e4e761e}.
+2020-02-13 15:50:38.444 +05:30 [Debug] Found key {424d71b8-1045-427a-835d-e4783f92130b}.
+2020-02-13 15:50:38.463 +05:30 [Debug] Considering key {3c6c929f-56df-41ca-83f1-0a017e4e761e} with expiration date 2020-02-25 09:58:43Z as default key.
+2020-02-13 15:50:38.483 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+2020-02-13 15:50:38.526 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2020-02-13 15:50:38.540 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2020-02-13 15:50:38.558 +05:30 [Debug] Using key {3c6c929f-56df-41ca-83f1-0a017e4e761e} as the default key.
+2020-02-13 15:50:39.319 +05:30 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}"'.
+2020-02-13 15:50:39.558 +05:30 [Debug] Executing action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)"
+2020-02-13 15:50:39.758 +05:30 [Information] Executing action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" with arguments (null) - ModelState is Valid
+2020-02-13 15:50:39.764 +05:30 [Debug] Loading home page
+2020-02-13 15:50:39.891 +05:30 [Debug] Compiling query model: 
+'from Pie p in 
+    (from Pie c in DbSet<Pie>
+    select c)
+    .Include([c].Category)
+where p.IsPieOfTheWeek
+select p'
+2020-02-13 15:50:39.910 +05:30 [Debug] Optimized query model: 
+'from Pie c in DbSet<Pie>
+where c.IsPieOfTheWeek
+select c'
+2020-02-13 15:50:39.962 +05:30 [Debug] Including navigation: 'c.Category'
+2020-02-13 15:50:40.149 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Pie> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<Pie> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+            FROM [Pies] AS [c]
+            INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+            WHERE [c].[IsPieOfTheWeek] = 1
+        , 
+        shaper: BufferedEntityShaper<Pie>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.Pie,System.Object]), 
+    navigationPath: INavigation[] { Pie.Category, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 12, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Category()
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: CategoryId
+                )
+                var3.<CategoryName>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: CategoryName
+                )
+                var3.<Description>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: Description
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-13 15:50:40.179 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:40.391 +05:30 [Information] Executed DbCommand (209ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[PieId], [c].[AllergyInformation], [c].[CategoryId], [c].[ImageThumbnailUrl], [c].[ImageUrl], [c].[InStock], [c].[IsPieOfTheWeek], [c].[LongDescription], [c].[Name], [c].[Price], [c].[ShortDescription], [c].[SugarLevel], [c0].[CategoryId], [c0].[CategoryName], [c0].[Description]
+FROM [Pies] AS [c]
+INNER JOIN [Categories] AS [c0] ON [c].[CategoryId] = [c0].[CategoryId]
+WHERE [c].[IsPieOfTheWeek] = 1
+2020-02-13 15:50:40.631 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:40.662 +05:30 [Debug] Executed action method "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2020-02-13 15:50:41.044 +05:30 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2020-02-13 15:50:41.088 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-13 15:50:41.870 +05:30 [Debug] Code generation for the Razor file at '"/Views/Home/Index.cshtml"' completed in 771.7151ms.
+2020-02-13 15:50:41.900 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' started.
+2020-02-13 15:50:44.840 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Home/Index.cshtml"' completed in 2937.2202ms.
+2020-02-13 15:50:44.859 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-13 15:50:44.873 +05:30 [Debug] Code generation for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 11.1319ms.
+2020-02-13 15:50:44.875 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' started.
+2020-02-13 15:50:44.946 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/_ViewStart.cshtml"' completed in 68.6751ms.
+2020-02-13 15:50:44.960 +05:30 [Debug] The view '"Index"' was found.
+2020-02-13 15:50:44.964 +05:30 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2020-02-13 15:50:45.096 +05:30 [Debug] View lookup cache miss for view '"Carousel"' in controller '"Home"'.
+2020-02-13 15:50:45.099 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-13 15:50:45.261 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 160.1557ms.
+2020-02-13 15:50:45.265 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' started.
+2020-02-13 15:50:45.438 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Carousel.cshtml"' completed in 170.8744ms.
+2020-02-13 15:50:45.543 +05:30 [Debug] View lookup cache miss for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-13 15:50:45.555 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-13 15:50:45.669 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 109.3587ms.
+2020-02-13 15:50:45.673 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' started.
+2020-02-13 15:50:45.858 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/PieOfTheWeekSummary.cshtml"' completed in 182.343ms.
+2020-02-13 15:50:45.993 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-13 15:50:45.998 +05:30 [Debug] View lookup cache hit for view '"PieOfTheWeekSummary"' in controller '"Home"'.
+2020-02-13 15:50:46.005 +05:30 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2020-02-13 15:50:46.009 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-13 15:50:46.090 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 78.7806ms.
+2020-02-13 15:50:46.092 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' started.
+2020-02-13 15:50:46.241 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/_Layout.cshtml"' completed in 146.0093ms.
+2020-02-13 15:50:46.602 +05:30 [Debug] Executing view component "BethanysPieShop.Components.CategoryMenu" with arguments ([]).
+2020-02-13 15:50:46.618 +05:30 [Debug] Executed view component "BethanysPieShop.Components.CategoryMenu" in 5.8216ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-13 15:50:46.633 +05:30 [Debug] View lookup cache miss for view '"Components/CategoryMenu/Default"' in controller '"Home"'.
+2020-02-13 15:50:46.633 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-13 15:50:46.665 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 31.3477ms.
+2020-02-13 15:50:46.665 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' started.
+2020-02-13 15:50:46.749 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/CategoryMenu/Default.cshtml"' completed in 73.3798ms.
+2020-02-13 15:50:46.765 +05:30 [Debug] Compiling query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-13 15:50:46.765 +05:30 [Debug] Optimized query model: 
+'from Category <generated>_0 in DbSet<Category>
+select <generated>_0'
+2020-02-13 15:50:46.780 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<Category> _ShapedQuery(
+    queryContext: queryContext, 
+    shaperCommandContext: SelectExpression: 
+        SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+        FROM [Categories] AS [c]
+    , 
+    shaper: UnbufferedEntityShaper<Category>
+)
+
+2020-02-13 15:50:46.780 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:47.006 +05:30 [Information] Executed DbCommand (213ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2020-02-13 15:50:47.022 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:47.069 +05:30 [Debug] Executing view component "BethanysPieShop.Components.ShoppingCartSummary" with arguments ([]).
+2020-02-13 15:50:47.100 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c)
+.Include([c].Pie)'
+2020-02-13 15:50:47.108 +05:30 [Debug] Optimized query model: 
+'from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c'
+2020-02-13 15:50:47.128 +05:30 [Debug] Including navigation: 'c.Pie'
+2020-02-13 15:50:47.159 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<ShoppingCartItem> _Include(
+    queryContext: (RelationalQueryContext) queryContext, 
+    innerResults: IEnumerable<ShoppingCartItem> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+            FROM [ShoppingCartItems] AS [c]
+            LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+            WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+        , 
+        shaper: BufferedEntityShaper<ShoppingCartItem>
+    )
+    , 
+    entityAccessor: default(System.Func`2[BethanysPieShop.Models.ShoppingCartItem,System.Object]), 
+    navigationPath: INavigation[] { ShoppingCartItem.Pie, }, 
+    relatedEntitiesLoaderFactories: new Func<QueryContext, IRelatedEntitiesLoader>[]{ (QueryContext ) => IRelatedEntitiesLoader _CreateReferenceRelatedEntitiesLoader(
+            valueBufferOffset: 4, 
+            queryIndex: 0, 
+            materializer: (ValueBuffer valueBuffer) => 
+            {
+                var3 = new Pie()
+                var3.<PieId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 0, 
+                    property: PieId
+                )
+                var3.<AllergyInformation>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 1, 
+                    property: AllergyInformation
+                )
+                var3.<CategoryId>k__BackingField = int TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 2, 
+                    property: CategoryId
+                )
+                var3.<ImageThumbnailUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 3, 
+                    property: ImageThumbnailUrl
+                )
+                var3.<ImageUrl>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 4, 
+                    property: ImageUrl
+                )
+                var3.<InStock>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 5, 
+                    property: InStock
+                )
+                var3.<IsPieOfTheWeek>k__BackingField = bool TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 6, 
+                    property: IsPieOfTheWeek
+                )
+                var3.<LongDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 7, 
+                    property: LongDescription
+                )
+                var3.<Name>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 8, 
+                    property: Name
+                )
+                var3.<Price>k__BackingField = decimal TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 9, 
+                    property: Price
+                )
+                var3.<ShortDescription>k__BackingField = string TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 10, 
+                    property: ShortDescription
+                )
+                var3.<SugarLevel>k__BackingField = SugarLevel TryReadValue(
+                    valueBuffer: valueBuffer, 
+                    index: 11, 
+                    property: SugarLevel
+                )
+                return instance
+            }
+        )
+         }
+    , 
+    querySourceRequiresTracking: True
+)
+
+2020-02-13 15:50:47.169 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:47.469 +05:30 [Information] Executed DbCommand (274ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [p].[PieId], [p].[AllergyInformation], [p].[CategoryId], [p].[ImageThumbnailUrl], [p].[ImageUrl], [p].[InStock], [p].[IsPieOfTheWeek], [p].[LongDescription], [p].[Name], [p].[Price], [p].[ShortDescription], [p].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [p] ON [c].[PieId] = [p].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+2020-02-13 15:50:47.469 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:47.500 +05:30 [Debug] Compiling query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+where c.ShoppingCartId == __ShoppingCartId_0
+select c.Pie.Price * (decimal) c.Amount)
+.Sum()'
+2020-02-13 15:50:47.538 +05:30 [Debug] Optimized query model: 
+'(from ShoppingCartItem c in DbSet<ShoppingCartItem>
+join Pie c.Pie in DbSet<Pie>
+on Property(c, "PieId") equals (Nullable<int>) Property(c.Pie, "PieId") into c.Pie_group
+from Pie c.Pie in 
+    (from Pie c.Pie_groupItem in c.Pie_group
+    select c.Pie_groupItem)
+    .DefaultIfEmpty()
+where c.ShoppingCartId == __ShoppingCartId_0
+select (decimal) (?[c.Pie].Price?) * (Nullable<decimal>) (decimal) c.Amount)
+.Sum()'
+2020-02-13 15:50:47.669 +05:30 [Warning] The LINQ expression 'Sum()' could not be translated and will be evaluated locally. To configure this warning use the DbContextOptionsBuilder.ConfigureWarnings API (event id 'RelationalEventId.QueryClientEvaluationWarning'). ConfigureWarnings can be used when overriding the DbContext.OnConfiguring method or using AddDbContext on the application service provider.
+2020-02-13 15:50:47.716 +05:30 [Debug] TRACKED: True
+(QueryContext queryContext) => IEnumerable<decimal> _ToSequence(
+    element: decimal Sum(
+        source: IEnumerable<decimal> _Select(
+            source: IEnumerable<TransparentIdentifier<ShoppingCartItem, Pie>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+                    FROM [ShoppingCartItems] AS [c]
+                    LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+                    WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+                    ORDER BY [c].[PieId]
+                , 
+                shaper: CompositeShaper`3
+            )
+            , 
+            selector: (TransparentIdentifier<ShoppingCartItem, Pie> t1) => (decimal) (?t1.Inner.Price?) * (Nullable<decimal>) (decimal) t1.Outer.Amount
+        )
+    )
+)
+
+2020-02-13 15:50:47.732 +05:30 [Debug] Opening connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:47.981 +05:30 [Information] Executed DbCommand (218ms) [Parameters=[@__ShoppingCartId_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ShoppingCartItemId], [c].[Amount], [c].[PieId], [c].[ShoppingCartId], [c.Pie].[PieId], [c.Pie].[AllergyInformation], [c.Pie].[CategoryId], [c.Pie].[ImageThumbnailUrl], [c.Pie].[ImageUrl], [c.Pie].[InStock], [c.Pie].[IsPieOfTheWeek], [c.Pie].[LongDescription], [c.Pie].[Name], [c.Pie].[Price], [c.Pie].[ShortDescription], [c.Pie].[SugarLevel]
+FROM [ShoppingCartItems] AS [c]
+LEFT JOIN [Pies] AS [c.Pie] ON [c].[PieId] = [c.Pie].[PieId]
+WHERE [c].[ShoppingCartId] = @__ShoppingCartId_0
+ORDER BY [c].[PieId]
+2020-02-13 15:50:47.999 +05:30 [Debug] Closing connection to database 'BethanysPieShop' on server 'tcp:prashant-goda.database.windows.net,1433'.
+2020-02-13 15:50:48.002 +05:30 [Debug] Executed view component "BethanysPieShop.Components.ShoppingCartSummary" in 927.6425ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-13 15:50:48.012 +05:30 [Debug] View lookup cache miss for view '"Components/ShoppingCartSummary/Default"' in controller '"Home"'.
+2020-02-13 15:50:48.012 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-13 15:50:48.032 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 14.7326ms.
+2020-02-13 15:50:48.032 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' started.
+2020-02-13 15:50:48.102 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/ShoppingCartSummary/Default.cshtml"' completed in 68.0354ms.
+2020-02-13 15:50:48.122 +05:30 [Debug] View lookup cache miss for view '"LoginPartial"' in controller '"Home"'.
+2020-02-13 15:50:48.132 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-13 15:50:48.150 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 15.7038ms.
+2020-02-13 15:50:48.150 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' started.
+2020-02-13 15:50:48.207 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LoginPartial.cshtml"' completed in 61.914ms.
+2020-02-13 15:50:48.239 +05:30 [Debug] Executing view component "BethanysPieShop.Components.SystemStatusPage" with arguments ([]).
+2020-02-13 15:50:49.040 +05:30 [Debug] Executed view component "BethanysPieShop.Components.SystemStatusPage" in 791.3217ms and returned "Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult"
+2020-02-13 15:50:49.040 +05:30 [Debug] View lookup cache miss for view '"Components/SystemStatusPage/Default"' in controller '"Home"'.
+2020-02-13 15:50:49.040 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-13 15:50:49.056 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 9.1197ms.
+2020-02-13 15:50:49.062 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' started.
+2020-02-13 15:50:49.125 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/Components/SystemStatusPage/Default.cshtml"' completed in 60.955ms.
+2020-02-13 15:50:49.141 +05:30 [Debug] View lookup cache miss for view '"LanguageSelection"' in controller '"Home"'.
+2020-02-13 15:50:49.141 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-13 15:50:49.163 +05:30 [Debug] Code generation for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 12.5588ms.
+2020-02-13 15:50:49.163 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' started.
+2020-02-13 15:50:49.210 +05:30 [Debug] Compilation of the generated code for the Razor file at '"/Views/Shared/LanguageSelection.cshtml"' completed in 51.9123ms.
+2020-02-13 15:50:49.363 +05:30 [Information] Executed action "BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)" in 9808.6471ms
+2020-02-13 15:50:49.379 +05:30 [Information] Session started; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"131bf731-7f8f-547d-0343-820935ceb35a"
+2020-02-13 15:50:49.395 +05:30 [Debug] Session stored; Key:"d421aa29-0052-fcbe-02e9-ffa8986515cb", Id:"131bf731-7f8f-547d-0343-820935ceb35a", Count:1
+2020-02-13 15:50:49.464 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" completed keep alive response.
+2020-02-13 15:50:49.464 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" started.
+2020-02-13 15:50:49.479 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" started.
+2020-02-13 15:50:49.479 +05:30 [Information] Request finished in 11865.1447ms 200 text/html; charset=utf-8
+2020-02-13 15:50:49.479 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Images/carousel2.jpg  
+2020-02-13 15:50:49.479 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/script2.js  
+2020-02-13 15:50:49.479 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Content/site.css  
+2020-02-13 15:50:49.495 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" started.
+2020-02-13 15:50:49.526 +05:30 [Information] Sending file. Request path: '"/Scripts/script2.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\script2.js"'
+2020-02-13 15:50:49.526 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" started.
+2020-02-13 15:50:49.579 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery/dist/jquery.js  
+2020-02-13 15:50:49.579 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Images/bethanylogo.png  
+2020-02-13 15:50:49.579 +05:30 [Information] Sending file. Request path: '"/Content/site.css"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Content\site.css"'
+2020-02-13 15:50:49.579 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/js/bootstrap.js  
+2020-02-13 15:50:49.595 +05:30 [Information] Sending file. Request path: '"/Images/bethanylogo.png"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Images\bethanylogo.png"'
+2020-02-13 15:50:49.595 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-02-13 15:50:49.595 +05:30 [Information] Sending file. Request path: '"/Images/carousel2.jpg"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Images\carousel2.jpg"'
+2020-02-13 15:50:49.611 +05:30 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\jquery\dist\jquery.js"'
+2020-02-13 15:50:49.611 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" completed keep alive response.
+2020-02-13 15:50:49.626 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" completed keep alive response.
+2020-02-13 15:50:49.642 +05:30 [Information] Request finished in 158.9365ms 200 text/css
+2020-02-13 15:50:49.642 +05:30 [Information] Request finished in 144.002ms 200 application/javascript
+2020-02-13 15:50:49.686 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" completed keep alive response.
+2020-02-13 15:50:49.698 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" completed keep alive response.
+2020-02-13 15:50:49.728 +05:30 [Information] Request finished in 154.6399ms 200 image/png
+2020-02-13 15:50:49.731 +05:30 [Information] Request finished in 158.6667ms 200 application/javascript
+2020-02-13 15:50:49.806 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" completed keep alive response.
+2020-02-13 15:50:49.806 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/script4.js  
+2020-02-13 15:50:49.822 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" completed keep alive response.
+2020-02-13 15:50:49.822 +05:30 [Information] Sending file. Request path: '"/Scripts/script4.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\script4.js"'
+2020-02-13 15:50:49.837 +05:30 [Information] Request finished in 308.9821ms 200 application/javascript
+2020-02-13 15:50:49.853 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/script1.js  
+2020-02-13 15:50:49.869 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" completed keep alive response.
+2020-02-13 15:50:49.869 +05:30 [Information] Sending file. Request path: '"/Scripts/script1.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\script1.js"'
+2020-02-13 15:50:49.884 +05:30 [Information] Request finished in 127.9432ms 200 application/javascript
+2020-02-13 15:50:49.891 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation/dist/jquery.validate.min.js  
+2020-02-13 15:50:49.906 +05:30 [Information] Request finished in 350.7034ms 200 image/jpeg
+2020-02-13 15:50:49.906 +05:30 [Information] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.min.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"'
+2020-02-13 15:50:49.906 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" completed keep alive response.
+2020-02-13 15:50:49.938 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/script3.js  
+2020-02-13 15:50:49.938 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" completed keep alive response.
+2020-02-13 15:50:49.938 +05:30 [Information] Request finished in 99.1226ms 200 application/javascript
+2020-02-13 15:50:49.953 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Images/carousel3.jpg  
+2020-02-13 15:50:49.953 +05:30 [Information] Sending file. Request path: '"/Scripts/script3.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\script3.js"'
+2020-02-13 15:50:49.969 +05:30 [Information] Request finished in 72.786ms 200 application/javascript
+2020-02-13 15:50:49.984 +05:30 [Information] Sending file. Request path: '"/Images/carousel3.jpg"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Images\carousel3.jpg"'
+2020-02-13 15:50:49.991 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" completed keep alive response.
+2020-02-13 15:50:50.022 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Images/carousel1.jpg  
+2020-02-13 15:50:50.022 +05:30 [Information] Sending file. Request path: '"/Images/carousel1.jpg"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Images\carousel1.jpg"'
+2020-02-13 15:50:50.022 +05:30 [Information] Request finished in 89.982ms 200 application/javascript
+2020-02-13 15:50:50.138 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/MoreScripts/script6.js  
+2020-02-13 15:50:50.154 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" completed keep alive response.
+2020-02-13 15:50:50.169 +05:30 [Information] Sending file. Request path: '"/Scripts/MoreScripts/script6.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\MoreScripts\script6.js"'
+2020-02-13 15:50:50.191 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2020-02-13 15:50:50.193 +05:30 [Information] Request finished in 194.767ms 200 image/jpeg
+2020-02-13 15:50:50.202 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" completed keep alive response.
+2020-02-13 15:50:50.204 +05:30 [Information] Request finished in 249.5779ms 200 image/jpeg
+2020-02-13 15:50:50.264 +05:30 [Information] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"'
+2020-02-13 15:50:50.305 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" completed keep alive response.
+2020-02-13 15:50:50.343 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/Scripts/MoreScripts/script5.js  
+2020-02-13 15:50:50.355 +05:30 [Information] Request finished in 150.1455ms 200 application/javascript
+2020-02-13 15:50:50.375 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" completed keep alive response.
+2020-02-13 15:50:50.375 +05:30 [Information] Request finished in 312.7263ms 200 application/javascript
+2020-02-13 15:50:50.395 +05:30 [Information] Sending file. Request path: '"/Scripts/MoreScripts/script5.js"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\Scripts\MoreScripts\script5.js"'
+2020-02-13 15:50:50.415 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" completed keep alive response.
+2020-02-13 15:50:50.436 +05:30 [Information] Request finished in 133.9302ms 200 application/javascript
+2020-02-13 15:50:50.587 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/css/bootstrap.min.css  
+2020-02-13 15:50:50.597 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+2020-02-13 15:50:50.618 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" completed keep alive response.
+2020-02-13 15:50:50.658 +05:30 [Information] Request finished in 36.9209ms 200 text/css
+2020-02-13 15:50:50.897 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2020-02-13 15:50:50.913 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44381/images/pattern.png  
+2020-02-13 15:50:50.941 +05:30 [Information] Sending file. Request path: '"/images/pattern.png"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\images\pattern.png"'
+2020-02-13 15:50:50.971 +05:30 [Information] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\FGL-Documentation\CORE-Preparation\aspdotnet-core-mvc-enterprise-application\11\demos\Demos\src\BethanysPieShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"'
+2020-02-13 15:50:50.981 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" completed keep alive response.
+2020-02-13 15:50:50.991 +05:30 [Information] Request finished in 95.1541ms 200 image/png
+2020-02-13 15:50:51.011 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" completed keep alive response.
+2020-02-13 15:50:51.011 +05:30 [Information] Request finished in 132.3152ms 200 application/font-woff2
+2020-02-13 15:52:52.083 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" disconnecting.
+2020-02-13 15:52:52.083 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" disconnecting.
+2020-02-13 15:52:52.083 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" sending FIN.
+2020-02-13 15:52:52.098 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" disconnecting.
+2020-02-13 15:52:52.083 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" disconnecting.
+2020-02-13 15:52:52.098 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" disconnecting.
+2020-02-13 15:52:52.098 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" sending FIN.
+2020-02-13 15:52:52.098 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" disconnecting.
+2020-02-13 15:52:52.130 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" sending FIN.
+2020-02-13 15:52:52.130 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" sending FIN.
+2020-02-13 15:52:52.130 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" sending FIN.
+2020-02-13 15:52:52.130 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" sending FIN.
+2020-02-13 15:52:52.145 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" sent FIN with status "0".
+2020-02-13 15:52:52.145 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" sent FIN with status "0".
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158K"" stopped.
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158J"" stopped.
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" sent FIN with status "0".
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" sent FIN with status "0".
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158I"" stopped.
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158H"" stopped.
+2020-02-13 15:52:52.152 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" sent FIN with status "0".
+2020-02-13 15:52:52.167 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" sent FIN with status "0".
+2020-02-13 15:52:52.167 +05:30 [Debug] Connection id ""0HLTGDPF7158G"" stopped.
+2020-02-13 15:52:52.167 +05:30 [Debug] Connection id ""0HLTGDPF7158F"" stopped.
